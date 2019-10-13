@@ -1,11 +1,12 @@
 # 个人学习日志记录 #
 
  1. 后端
-	- php
+	- PHP
 	- Go
 	- laravel
 	- mysql
 	- redis
+	- swoole
  
  2. 前端
  	- javascript
