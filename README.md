@@ -2,6 +2,7 @@
 
  1. 后端
 	- php
+	- Go
 	- laravel
 	- mysql
 	- redis
