@@ -1,4 +1,4 @@
-`它在一个网络接口上监听，那你就绑定一个IP或者多个IP。
+```它在一个网络接口上监听，那你就绑定一个IP或者多个IP。
 #
 # 示例，多个IP用空格隔开:
 #
@@ -723,4 +723,4 @@ hz 10
 # big latency spikes.
 aof-rewrite-incremental-fsync yes
 
-`
+```
