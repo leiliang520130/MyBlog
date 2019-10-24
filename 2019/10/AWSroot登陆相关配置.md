@@ -1,4 +1,4 @@
-使用pemkey登陆linux su -i 切换到root 
+使用pemkey登陆linux sudo -s 切换到root 
 
 设置root的密码
 sudo passwd root #输入2次密码给root用户设定密码
