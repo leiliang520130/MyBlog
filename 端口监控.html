@@ -1,1 +1,7 @@
-<attachment contenteditable="false" data-atts="%5B%5D" data-aid=".atts-9ef5b2ab-844f-4f7f-befa-21de4f9a5429"></attachment><p><br></p>
+<attachment contenteditable="false" data-atts="%5B%5D" data-aid=".atts-9ef5b2ab-844f-4f7f-befa-21de4f9a5429"></attachment><p>在ip章节中,我们知道了,开启一个tcp/udp服务,都得占用一个端口,所有我们可以通过查看端口的方式去判断服务是否开启成功.</p><h3>netstat命令</h3><p>使用netstat命令可查看端口占用情况</p><p>netstat命令各个参数说明如下:</p><ul><li>-t : 指明显示TCP端口</li><li>-u : 指明显示UDP端口</li><li>-l : 仅显示监听套接字(所谓套接字就是使应用程序能够读写与收发通讯协议(protocol)与资料的程序)</li><li>-p : 显示进程标识符和程序名称，每一个套接字/端口都属于一个程序。</li><li>-n : 不进行DNS轮询，显示IP(可以加速操作)</li></ul><pre class="ql-syntax" spellcheck="false">netstat -ntulp |grep 80
+</pre><ul><li>查看80端口占用情况 输出:</li></ul><pre class="ql-syntax" spellcheck="false">tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      1036/nginx: master
+</pre><h3>lsof命令</h3><p>lsof命令需要自行安装</p><pre class="ql-syntax" spellcheck="false">sudo yum install lsof
+</pre><p>使用方法如下:</p><pre class="ql-syntax" spellcheck="false">lsof  -i tcp #列出所有tcp网络连接
+lsof  -i udp #列出所有udp网络连接信息
+lsof -i :8080 #列出使用8080端口信息
+</pre><p><br></p>
