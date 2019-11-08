@@ -8,5 +8,12 @@ $sales = $redis->get('sale');
 $store = 10;
 
 if($sales>=$store){
-	exit("")
+	exit("活动结束");
+}
+
+$redis->multi();
+$redis->incr('sale');
+$res = $redis->exec();
+if($res){
+	
 }
