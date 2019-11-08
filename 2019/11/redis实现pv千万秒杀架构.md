@@ -15,5 +15,7 @@ $redis->multi();
 $redis->incr('sale');
 $res = $redis->exec();
 if($res){
-	
+	//扣库存
+}else{
+	//秒杀失败
 }
