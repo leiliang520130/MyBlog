@@ -15,7 +15,10 @@ public function down()
     }
 
 ```
-```language
+```php artisan make:migrate chang_img_into_posts
+Schema::table('posts', function (Blueprint $table) {
+            $table->string('img')->default("")->change()->comment('头像');;
+        });
 
 ```
 
